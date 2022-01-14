@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculation"
+    tools:layout_editor_absoluteX="-15dp"
+    tools:layout_editor_absoluteY="-25dp">
+
+    <!--Text View as Application Heading  -->
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:text="SALARY CALCULATION FOR EMPLOYEE"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <!--Text View as Sub title to show the Gross Salary -->
+    <TextView
+        android:id="@+id/saltxt5"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:text="GROSS SALARY OF EMPLOYEE"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <!--Text View as Sub title to show the Reduction Salary -->
+    <TextView
+        android:id="@+id/saltxt7"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:text="REDUCTION ON SALARY"
+        android:textAlignment="center"
+        android:textColor="#F60606"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <!--Text View to diaplay the  Gross Salary -->
+    <TextView
+        android:id="@+id/grosssal"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:text="GROSS SALARY IS"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <!--Text View as Sub title to display the Net Salary -->
+    <TextView
+        android:id="@+id/Netssal"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:hint="NET SALARY IS"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+    <!--Text View as Sub title to show the Net Salary -->
+    <TextView
+        android:id="@+id/saltxt"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:text="NET SALARY OF EMPLOYEE"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <!--Text View to show the Income tax  reduction -->
+    <TextView
+        android:id="@+id/incometaxcal"
+        android:layout_width="170dp"
+        android:layout_height="43dp"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
+    <!--Text View to show the Pension tax  reduction -->
+    <TextView
+        android:id="@+id/pensiontaxcal"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648" />
+    <!--Text View to show the Groceries tax  reduction -->
+
+    <TextView
+        android:id="@+id/groceriestaxcal"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+    <!--Text View to show the Travel tax  reduction -->
+
+    <TextView
+        android:id="@+id/traveltaxcal"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <!--Text View to sub categories of tax reduction -->
+    <TextView
+        android:id="@+id/inctax5"
+        android:layout_width="240dp"
+        android:layout_height="44dp"
+        android:hint="INCOME TAX AMOUNT "
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+    <!--Text View to sub categories of tax reduction -->
+    <TextView
+        android:id="@+id/inctax"
+        android:layout_width="237dp"
+        android:layout_height="43dp"
+        android:hint="PENSION AMOUNT "
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
+    <!--Text View to sub categories of tax reduction -->
+    <TextView
+        android:id="@+id/inctax3"
+        android:layout_width="237dp"
+        android:layout_height="40dp"
+        android:hint="TRAVEL TAX "
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
+    <!--Text View to sub categories of tax reduction -->
+    <TextView
+        android:id="@+id/groceries"
+        android:layout_width="234dp"
+        android:layout_height="37dp"
+        android:hint="GROCERIES TAX  "
+        android:textAlignment="center"
+        android:textColor="#0D950D"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+    <!--Text View to  Employee name -->
+    <TextView
+        android:id="@+id/saltxt2"
+        android:layout_width="409dp"
+        android:layout_height="34dp"
+        android:text="ENTER EMPLOYEE NAME"
+        android:textColor="#0D8595"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+    <!--Text View to  Employee working days  -->
+    <TextView
+        android:id="@+id/saltxt3"
+        android:layout_width="380dp"
+        android:layout_height="34dp"
+        android:text="ENTER TOTAL DAYS WORKED "
+        android:textColor="#0D8595"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+    <!--Text View to  Employee Bonus -->
+    <TextView
+        android:id="@+id/saltxt4"
+        android:layout_width="368dp"
+        android:layout_height="36dp"
+        android:text="ENTER TOTAL MONTHLY  BONUS "
+        android:textColor="#0D8595"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+    <!--Edit View to Enter Employee name -->
+    <EditText
+        android:id="@+id/empname"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+    <!--Edit View to Enter Employee Working days -->
+    <EditText
+        android:id="@+id/empwdays"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+    <!--Edit View to Enter Employee Bonus -->
+
+    <EditText
+        android:id="@+id/empovertime"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+    <!--Button  to Calculate Salary  -->
+    <Button
+        android:id="@+id/Calbtn"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:text="EVALUATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+    <!--Button  to Insert Salary  -->
+    <Button
+        android:id="@+id/insbtn"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:text="INSERT DATA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+    <!--Button  to View Salary  -->
+    <Button
+        android:id="@+id/viewdata"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
+        android:text="VIEW DATA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <!--Button  to Reset fields   -->
+    <Button
+        android:id="@+id/cleardata"
+        android:layout_width="201dp"
+        android:layout_height="55dp"
+        android:text="reset input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+    <!--Button  to Delete Salary  -->
+    <Button
+        android:id="@+id/deldata"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:text="DELETE DATA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+    <!--Button  to Update Salary  -->
+    <Button
+        android:id="@+id/updbtn"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:text="MODIFY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
